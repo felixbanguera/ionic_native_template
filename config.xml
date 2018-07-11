@@ -81,4 +81,12 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="1.1.19" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.5" />
+    <allow-navigation href="http://10.3.8.126:8100" />
+    <plugin name="cordova-plugin-geolocation" spec="^2.4.3">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
+    </plugin>
+    <plugin name="cordova-plugin-camera" spec="^2.4.1" />
+    <allow-navigation href="http://10.3.9.28:8100" />
+    <engine name="android" spec="6.3.0" />
+    <plugin name="fr.drangies.cordova.serial" spec="~0.0.7" />
 </widget>
