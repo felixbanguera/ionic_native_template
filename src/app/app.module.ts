@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { GeoPage } from '../pages/geo/geo';
 import { CamPage } from '../pages/cam/cam';
+import { SerialPage } from '../pages/serial/serial';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,7 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     GeoPage,
     CamPage,
-
+    SerialPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     GeoPage,
     CamPage,
-
+    SerialPage
   ],
   providers: [
     StatusBar,
