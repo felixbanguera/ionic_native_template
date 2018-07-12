@@ -16,7 +16,11 @@ import { Serial } from '@ionic-native/serial';
 })
 export class SerialPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private serial: Serial) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private serial: Serial
+    ) {
     this.serial.requestPermission().then(() => {
       this.serial.open({
         baudRate: 115200,
@@ -33,6 +37,7 @@ export class SerialPage {
   }
 
   send(){
+    alert("Pressed SEND")
     this.serial.write('Test\n').then((smthg) => {
       alert("sent, returned");
       alert(smthg);
