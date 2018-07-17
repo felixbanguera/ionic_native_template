@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
+import { Serial } from '@ionic-native/serial';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -15,6 +16,7 @@ import { SerialPage } from '../pages/serial/serial';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SerialProvider } from '../providers/serial/serial';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SplashScreen,
     Camera,
     Geolocation,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    Serial,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    SerialProvider
   ]
 })
 export class AppModule {}
