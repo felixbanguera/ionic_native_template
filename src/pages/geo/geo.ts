@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 /**
  * Generated class for the GeoPage page.
@@ -8,7 +8,6 @@ import { Geolocation } from '@ionic-native/geolocation';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-geo',
   templateUrl: 'geo.html',
